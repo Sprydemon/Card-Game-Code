@@ -3020,7 +3020,6 @@ class game_board(FloatLayout):
             self.ids.hand_four.source = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\card_sleeve.png"
 
 
-
             swordman_bool = False
             swordman_index = 9
             self.ids.swordman.pos = (Window.width/5+3*Window.width/5/3)+3*Window.width/5/15.88 , Window.height/8.5
@@ -3064,6 +3063,22 @@ class game_board(FloatLayout):
             self.ids.tankCD.text = str(tank.cd)
             self.ids.bombCD.text = str(bomb.cd)
             self.ids.joltCD.text = str(jolt.cd)
+
+            swordman.spd = swordman.original_spd
+            ion.spd = ion.original_spd
+            apex.spd = apex.original_spd
+            blade.spd = blade.original_spd
+            tank.spd = tank.original_spd
+            bomb.spd = bomb.original_spd
+            jolt.spd = jolt.original_spd
+             
+            self.ids.swordmanSPD.text = str(swordman.spd)
+            self.ids.ionSPD.text = str(ion.spd)
+            self.ids.apexSPD.text = str(apex.spd)
+            self.ids.bladeSPD.text = str(blade.spd)
+            self.ids.tankSPD.text = str(tank.spd)
+            self.ids.bombSPD.text = str(bomb.spd)
+            self.ids.joltSPD.text = str(jolt.spd)
              
             
             O_swordman_summon = False
