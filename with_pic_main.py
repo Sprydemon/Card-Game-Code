@@ -35,21 +35,21 @@ class Charecter:
     
     
 
-attack = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one attack.png"
-attack2 = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two attack.png"
-attack3 = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three attack.png"
+attack = r"Images\+one attack.png"
+attack2 = r"Images\+two attack.png"
+attack3 = r"Images\+three attack.png"
 
-health = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one health.png"
-health2 = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two health.png"
-health3 = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three health.png"
+health = r"Images\+one health.png"
+health2 = r"Images\+two health.png"
+health3 = r"Images\+three health.png"
 
-speed = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one speed.png"
-speed2 = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two speed.png" 
+speed = r"Images\+one speed.png"
+speed2 = r"Images\+two speed.png" 
 
-dec_cooldown = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-one cooldown.png"
-dec_cooldown2 = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-two cooldown.png"
-inc_cooldown = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one cooldown.png"
-inc_cooldown2 = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two cooldown.png"
+dec_cooldown = r"Images\-1 cooldown.png"
+dec_cooldown2 = r"Images\-2 cooldown.png"
+inc_cooldown = r"Images\+one cooldown.png"
+inc_cooldown2 = r"Images\+two cooldown.png"
 
 card_list = [attack, attack2, attack3, health, health2, health3, speed, speed2, attack, attack2, attack3, health, health2, health3, speed, speed2, dec_cooldown, inc_cooldown, dec_cooldown2, inc_cooldown2]
 player_cards = card_list.copy()
@@ -199,7 +199,7 @@ O_ion = Charecter(2, 2, 3, 2, "opponent", r"Images\ion.png")
 global O_ion_summon
 O_ion_summon = False
 global O_ion_index
-ion_index = 9
+O_ion_index = 9
 #########################################################################################################################################
 O_apex = Charecter(3, 3, 2, 3, "opponent", r"Images\Apex.png")
 global O_apex_summon
@@ -1489,30 +1489,30 @@ class game_board(FloatLayout):
         spd_inc = 0
 
         if hand1 == True:
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one attack.png":
+            if player.stored[0] == r"Images\+one attack.png":
                 atk_inc = 1
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two attack.png":
+            if player.stored[0] == r"Images\+two attack.png":
                 atk_inc = 2
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three attack.png":
+            if player.stored[0] == r"Images\+three attack.png":
                 atk_inc = 3
 
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one health.png":
+            if player.stored[0] == r"Images\+one health.png":
                 hp_inc = 1
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two health.png":
+            if player.stored[0] == r"Images\+two health.png":
                 hp_inc = 2
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three health.png":
+            if player.stored[0] == r"Images\+three health.png":
                 hp_inc = 3
             
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one speed.png":
+            if player.stored[0] == r"Images\+one speed.png":
                 spd_inc = 1
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two speed.png":
+            if player.stored[0] == r"Images\+two speed.png":
                 spd_inc = 2
 
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-one cooldown.png":
+            if player.stored[0] == r"Images\-1 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-two cooldown.png":
+            if player.stored[0] == r"Images\-2 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
@@ -1520,10 +1520,10 @@ class game_board(FloatLayout):
                     if row.cd > 0:
                         row.cd -= 1
                 
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one cooldown.png":
+            if player.stored[0] == r"Images\+one cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 1
-            if player.stored[0] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two cooldown.png":
+            if player.stored[0] == r"Images\+two cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 2
 
@@ -1531,30 +1531,30 @@ class game_board(FloatLayout):
             self.ids.hand_one.source = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\card_sleeve.png"
             hand1 = False
         if hand2 == True:
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one attack.png":
+            if player.stored[1] == r"Images\+one attack.png":
                 atk_inc = 1
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two attack.png":
+            if player.stored[1] == r"Images\+two attack.png":
                 atk_inc = 2
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three attack.png":
+            if player.stored[1] == r"Images\+three attack.png":
                 atk_inc = 3
 
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one health.png":
+            if player.stored[1] == r"Images\+one health.png":
                 hp_inc = 1
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two health.png":
+            if player.stored[1] == r"Images\+two health.png":
                 hp_inc = 2
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three health.png":
+            if player.stored[1] == r"Images\+three health.png":
                 hp_inc = 3
             
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one speed.png":
+            if player.stored[1] == r"Images\+one speed.png":
                 spd_inc = 1
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two speed.png":
+            if player.stored[1] == r"Images\+two speed.png":
                 spd_inc = 2
 
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-one cooldown.png":
+            if player.stored[1] == r"Images\-1 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-two cooldown.png":
+            if player.stored[1] == r"Images\-2 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
@@ -1562,10 +1562,10 @@ class game_board(FloatLayout):
                     if row.cd > 0:
                         row.cd -= 1
                 
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one cooldown.png":
+            if player.stored[1] == r"Images\+one cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 1
-            if player.stored[1] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two cooldown.png":
+            if player.stored[1] == r"Images\+two cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 2
     
@@ -1573,30 +1573,30 @@ class game_board(FloatLayout):
             self.ids.hand_two.source = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\card_sleeve.png"
             hand2 = False
         if hand3 == True:
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one attack.png":
+            if player.stored[2] == r"Images\+one attack.png":
                 atk_inc = 1
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two attack.png":
+            if player.stored[2] == r"Images\+two attack.png":
                 atk_inc = 2
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three attack.png":
+            if player.stored[2] == r"Images\+three attack.png":
                 atk_inc = 3
 
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one health.png":
+            if player.stored[2] == r"Images\+one health.png":
                 hp_inc = 1
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two health.png":
+            if player.stored[2] == r"Images\+two health.png":
                 hp_inc = 2
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three health.png":
+            if player.stored[2] == r"Images\+three health.png":
                 hp_inc = 3
             
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one speed.png":
+            if player.stored[2] == r"Images\+one speed.png":
                 spd_inc = 1
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two speed.png":
+            if player.stored[2] == r"Images\+two speed.png":
                 spd_inc = 2
 
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-one cooldown.png":
+            if player.stored[2] == r"Images\-1 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-two cooldown.png":
+            if player.stored[2] == r"Images\-2 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
@@ -1604,10 +1604,10 @@ class game_board(FloatLayout):
                     if row.cd > 0:
                         row.cd -= 1
                 
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one cooldown.png":
+            if player.stored[2] == r"Images\+one cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 1
-            if player.stored[2] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two cooldown.png":
+            if player.stored[2] == r"Images\+two cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 2
 
@@ -1615,30 +1615,30 @@ class game_board(FloatLayout):
             self.ids.hand_three.source = r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\card_sleeve.png"
             hand3 = False
         if hand4 == True:
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one attack.png":
+            if player.stored[3] == r"Images\+one attack.png":
                 atk_inc = 1
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two attack.png":
+            if player.stored[3] == r"Images\+two attack.png":
                 atk_inc = 2
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three attack.png":
+            if player.stored[3] == r"Images\+three attack.png":
                 atk_inc = 3
 
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one health.png":
+            if player.stored[3] == r"Images\+one health.png":
                 hp_inc = 1
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two health.png":
+            if player.stored[3] == r"Images\+two health.png":
                 hp_inc = 2
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+three health.png":
+            if player.stored[3] == r"Images\+three health.png":
                 hp_inc = 3
             
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one speed.png":
+            if player.stored[3] == r"Images\+one speed.png":
                 spd_inc = 1
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two speed.png":
+            if player.stored[3] == r"Images\+two speed.png":
                 spd_inc = 2
 
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-one cooldown.png":
+            if player.stored[3] == r"Images\-1 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\-two cooldown.png":
+            if player.stored[3] == r"Images\-2 cooldown.png":
                 for row in rest_spot:
                     if row.cd > 0:
                         row.cd -= 1
@@ -1646,10 +1646,10 @@ class game_board(FloatLayout):
                     if row.cd > 0:
                         row.cd -= 1
                 
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+one cooldown.png":
+            if player.stored[3] == r"Images\+one cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 1
-            if player.stored[3] == r"C:\Users\salam\OneDrive\Desktop\Visual studio\Images\+two cooldown.png":
+            if player.stored[3] == r"Images\+two cooldown.png":
                 for row in O_rest_spot:
                     row.cd += 2
 
@@ -1764,7 +1764,6 @@ class game_board(FloatLayout):
 # O_swordman
             global O_swordman_summon
             global O_swordman_index
-
             O_swordman.spd = O_swordman.original_spd
             if O_swordman.cd <= 0:
                 for row in left_lane:
@@ -1832,7 +1831,7 @@ class game_board(FloatLayout):
 # O_ion
             global O_ion_summon
             global O_ion_index
-            print(O_ion_index)
+            # print(O_ion_index)
             O_ion.spd = O_ion.original_spd
             if O_ion.cd <= 0:
                 for row in left_lane:
